@@ -20,15 +20,22 @@
   <link rel="stylesheet" href="style.css" />
   </head>
   <body class="body">
-    <header>
+    <header> 
     <h1>Que Faire à <span>Paris ?</span></h1>
     <form onsubmit="onFormSubmit(event)">
       <input class="texte-formulaire" type="text" name="search" id="searchInput"/>
-      <input  class="bouton" type="image" src="/img/iconesearch.png"/>
+      <input class="bouton" type="image" name="cinema" src="/img/iconesearch.png"/>
     </form>
+    
+    <input  onclick="onInputClick(event)"class="bouton2" type="image"  id="cinemaInput" src="/img/iconecinema.png"/> 
 
-    <input  class="bouton2" type="image" src="/img/iconecinema.png"/> 
-    <input  class="bouton3" type="image" src="/img/iconegame.png"/> 
+
+    
+    <input  onclick="onInputClick2(event)"class="bouton3" type="image" id="gameInput" src="/img/iconegame.png"/> 
+
+    
+    <input  onclick="onInputClick3(event)"class="bouton4" type="image" id="mangaInput" src="/img/iconemanga.png"/> 
+
     </header>
     
     <div id="mapid"></div>

@@ -80,6 +80,26 @@ function onFormSubmit(event){
   getData(searchInput.value);
 
 }
+function onInputClick(event){
+  event.preventDefault();
+  console.log(cinemaInput.value);
+  getData('cinema');
+
+}
+
+function onInputClick2(event){
+  event.preventDefault();
+  console.log(gameInput.value);
+  getData('jeux vidéo');
+
+}
+
+function onInputClick3(event){
+  event.preventDefault();
+  console.log(mangaInput.value);
+  getData('manga');
+
+}
 
 var blackIcon = L.icon({
   iconUrl: 'img/marker.svg',
@@ -94,13 +114,13 @@ L.marker([ 48.852968,  2.349902], {icon: blackIcon}).addTo(mymap);
 //Tour Eiffel
 //var marker = L.marker([48.858370, 2.294481]).addTo(mymap);
 //Cathédrale de Paris
-var marker = L.marker([ 48.852968,  2.349902]).addTo(mymap);
+var marker = L.marker([ 48.852968,  2.349902], {icon: blackIcon}).addTo(mymap);
 //Palais Royale
-var marker = L.marker([48.864824,  2.334595]).addTo(mymap);
+var marker = L.marker([48.864824,  2.334595], {icon: blackIcon}).addTo(mymap);
 //Observatoire de Paris
-var marker = L.marker([ 48.8331,   2.3264]).addTo(mymap);
+var marker = L.marker([ 48.8331,   2.3264], {icon: blackIcon}).addTo(mymap);
 //Jardin du Luxembourg
-var marker = L.marker([ 48.846870,  2.337170]).addTo(mymap);
+var marker = L.marker([ 48.846870,  2.337170], {icon: blackIcon}).addTo(mymap);
 var circle = L.circle([48.8534, 2.3488], {
     color: 'red',
     fillColor: '#f03',
